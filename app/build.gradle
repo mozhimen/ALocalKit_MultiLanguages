@@ -2,12 +2,12 @@ apply plugin: 'com.android.application'
 // apply plugin: 'org.jetbrains.kotlin.android'
 
 android {
-    compileSdkVersion 34
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.hjq.language.demo"
-        minSdkVersion 16
-        targetSdkVersion 34
+        minSdk 16
+        targetSdk 33
         versionCode 930
         versionName "9.3"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -66,8 +66,8 @@ android {
 dependencies {
     // 依赖 libs 目录下所有的 jar 和 aar 包
     implementation fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
-    
-    implementation project(':library')
+    implementation project(':multilang')
+
 
     // AndroidX 库：https://github.com/androidx/androidx
     implementation 'androidx.appcompat:appcompat:1.4.0'

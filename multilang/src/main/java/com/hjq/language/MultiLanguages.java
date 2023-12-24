@@ -114,6 +114,14 @@ public final class MultiLanguages {
     }
 
     /**
+     * 获取 App 的语种
+     */
+    @Deprecated
+    public static Locale getAppLanguage() {
+        return LanguagesConfig.readAppLanguageSetting(sApplication);
+    }
+
+    /**
      * 设置 App 的语种
      *
      * @return              语种是否发生改变了
