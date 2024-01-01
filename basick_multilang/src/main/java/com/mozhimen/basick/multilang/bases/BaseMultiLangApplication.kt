@@ -1,6 +1,7 @@
 package com.mozhimen.basick.multilang.bases
 
 import android.content.Context
+import androidx.annotation.CallSuper
 import com.hjq.language.MultiLanguages
 import com.mozhimen.basick.elemk.android.app.bases.BaseApplication
 import com.mozhimen.basick.lintk.optin.OptInApiMultiDex_InApplication
@@ -18,6 +19,7 @@ open class BaseMultiLangApplication : BaseApplication() {
         super.attachBaseContext(MultiLanguages.attach(base))
     }
 
+    @CallSuper
     override fun onCreate() {
         super.onCreate()
         MultiLanguages.init(this)
