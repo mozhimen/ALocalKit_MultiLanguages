@@ -4,7 +4,7 @@ import android.content.Context
 import androidx.annotation.CallSuper
 import com.hjq.language.MultiLanguages
 import com.mozhimen.basick.elemk.android.app.bases.BaseApplication
-import com.mozhimen.basick.lintk.optin.OptInApiMultiDex_InApplication
+import com.mozhimen.basick.lintk.optins.OApiMultiDex_InApplication
 
 /**
  * @ClassName BaseMultiLangApplication
@@ -13,7 +13,7 @@ import com.mozhimen.basick.lintk.optin.OptInApiMultiDex_InApplication
  * @Date 2023/12/24 15:53
  * @Version 1.0
  */
-@OptIn(OptInApiMultiDex_InApplication::class)
+@OptIn(OApiMultiDex_InApplication::class)
 open class BaseMultiLangApplication : BaseApplication() {
     override fun attachBaseContext(base: Context?) {
         super.attachBaseContext(MultiLanguages.attach(base))
