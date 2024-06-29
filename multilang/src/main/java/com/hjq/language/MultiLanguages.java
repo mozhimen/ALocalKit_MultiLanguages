@@ -9,21 +9,26 @@ import android.os.LocaleList;
 import android.os.Looper;
 import android.os.MessageQueue;
 import android.text.TextUtils;
+
 import java.util.Locale;
 
 /**
- *    author : Android 轮子哥
- *    github : https://github.com/getActivity/MultiLanguages
- *    time   : 2019/05/03
- *    desc   : 语种切换框架
+ * author : Android 轮子哥
+ * github : https://github.com/getActivity/MultiLanguages
+ * time   : 2019/05/03
+ * desc   : 语种切换框架
  */
 @SuppressWarnings("unused")
 public final class MultiLanguages {
 
-    /** 应用上下文对象 */
+    /**
+     * 应用上下文对象
+     */
     private static Application sApplication;
 
-    /** 语种变化监听对象 */
+    /**
+     * 语种变化监听对象
+     */
     private static OnLanguageListener sLanguageListener;
 
     /**
@@ -96,6 +101,8 @@ public final class MultiLanguages {
         if (resources == null) {
             return;
         }
+        if (LanguagesUtils.getLocale(resources.getConfiguration()) == null || getAppLanguage(context) == null)
+            return;
         if (LanguagesUtils.getLocale(resources.getConfiguration()).equals(getAppLanguage(context))) {
             return;
         }
@@ -124,7 +131,7 @@ public final class MultiLanguages {
     /**
      * 设置 App 的语种
      *
-     * @return              语种是否发生改变了
+     * @return 语种是否发生改变了
      */
     public static boolean setAppLanguage(Context context, Locale newLocale) {
         //if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
@@ -170,7 +177,7 @@ public final class MultiLanguages {
     /**
      * 跟随系统语种
      *
-     * @return              语种是否发生改变了
+     * @return 语种是否发生改变了
      */
     public static boolean clearAppLanguage(Context context) {
         LanguagesConfig.clearLanguageSetting(context);
