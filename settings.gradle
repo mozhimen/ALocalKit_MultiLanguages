@@ -18,10 +18,10 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "ABasicKit_MultiLanguages"
+rootProject.name = "ALocalKit_MultiLanguages"
 include ':app'
 include ':multilang'
-include ':basick_multilang'
+include ':localk_multilang'
 //SwiftKit
 include ':SwiftKit'
 project(':SwiftKit').projectDir = new File("D:\\WorkSpace\\GitHub\\SwiftKit")

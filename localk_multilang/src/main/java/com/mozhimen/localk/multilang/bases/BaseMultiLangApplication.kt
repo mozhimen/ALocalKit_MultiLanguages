@@ -1,4 +1,4 @@
-package com.mozhimen.basick.multilang.bases
+package com.mozhimen.localk.multilang.bases
 
 import android.content.Context
 import androidx.annotation.CallSuper
