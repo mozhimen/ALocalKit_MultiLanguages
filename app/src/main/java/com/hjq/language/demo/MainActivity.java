@@ -12,20 +12,27 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+
 import androidx.annotation.NonNull;
+
 import com.hjq.bar.OnTitleBarListener;
 import com.hjq.bar.TitleBar;
 import com.hjq.language.LocaleContract;
 import com.hjq.language.MultiLanguages;
+import com.mozhimen.basick.utilk.android.text.UtilKDateFormatFormat;
+import com.mozhimen.basick.utilk.android.util.UtilKLogWrapper;
+import com.mozhimen.basick.utilk.java.text.UtilKSimpleDateFormatFormat;
+
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 
 /**
- *    author : Android 轮子哥
- *    github : https://github.com/getActivity/MultiLanguages
- *    time   : 2019/08/10
- *    desc   : 多语种切换演示
+ * author : Android 轮子哥
+ * github : https://github.com/getActivity/MultiLanguages
+ * time   : 2019/08/10
+ * desc   : 多语种切换演示
  */
 public final class MainActivity extends BaseActivity
         implements RadioGroup.OnCheckedChangeListener, OnTitleBarListener {
@@ -37,6 +44,37 @@ public final class MainActivity extends BaseActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Date date = new Date();
+        long time = System.currentTimeMillis();
+        UtilKLogWrapper.d("MainActivity>>>>>", UtilKSimpleDateFormatFormat.date2strDate(date, LocaleContract.getEnglishLocale(), "YYYYMMMMd"));
+        UtilKLogWrapper.d("MainActivity>>>>>", UtilKSimpleDateFormatFormat.date2strDate(date, LocaleContract.getEnglishLocale(), "YYYYMMMMd"));
+        UtilKLogWrapper.d("MainActivity>>>>>", UtilKSimpleDateFormatFormat.date2strDate(date, LocaleContract.getChineseLocale(), "YYYYMMMMd"));
+        UtilKLogWrapper.d("MainActivity>>>>>", UtilKSimpleDateFormatFormat.date2strDate(date, LocaleContract.getChineseLocale(), "YYYYMMMMd"));
+        UtilKLogWrapper.d("MainActivity>>>>>", UtilKSimpleDateFormatFormat.date2strDate(date, LocaleContract.getTraditionalChineseLocale(), "YYYYMMMMd"));
+        UtilKLogWrapper.d("MainActivity>>>>>", UtilKSimpleDateFormatFormat.date2strDate(date, LocaleContract.getTraditionalChineseLocale(), "YYYYMMMMd"));
+        UtilKLogWrapper.d("MainActivity>>>>>", UtilKSimpleDateFormatFormat.date2strDate(date, LocaleContract.getHindiLocale(), "YYYYMMMMd"));
+        UtilKLogWrapper.d("MainActivity>>>>>", UtilKSimpleDateFormatFormat.date2strDate(date, LocaleContract.getHindiLocale(), "YYYYMMMMd"));
+        UtilKLogWrapper.d("MainActivity>>>>>", UtilKSimpleDateFormatFormat.date2strDate(date, LocaleContract.getRussiaLocale(), "YYYYMMMMd"));
+        UtilKLogWrapper.d("MainActivity>>>>>", UtilKSimpleDateFormatFormat.date2strDate(date, LocaleContract.getRussiaLocale(), "YYYYMMMMd"));
+        UtilKLogWrapper.d("MainActivity>>>>>", UtilKSimpleDateFormatFormat.date2strDate(date, LocaleContract.getThailandLocale(), "YYYYMMMMd"));
+        UtilKLogWrapper.d("MainActivity>>>>>", UtilKSimpleDateFormatFormat.date2strDate(date, LocaleContract.getThailandLocale(), "YYYYMMMMd"));
+        UtilKLogWrapper.d("MainActivity>>>>>", UtilKSimpleDateFormatFormat.date2strDate(date, LocaleContract.getVietnameseLocale(), "YYYYMMMMd"));
+        UtilKLogWrapper.d("MainActivity>>>>>", UtilKSimpleDateFormatFormat.date2strDate(date, LocaleContract.getVietnameseLocale(), "YYYYMMMMd"));
+        UtilKLogWrapper.d("MainActivity>>>>>", UtilKSimpleDateFormatFormat.date2strDate(date, LocaleContract.getFilipinoLocale(), "YYYYMMMMd"));
+        UtilKLogWrapper.d("MainActivity>>>>>", UtilKSimpleDateFormatFormat.date2strDate(date, LocaleContract.getFilipinoLocale(), "YYYYMMMMd"));
+        UtilKLogWrapper.d("MainActivity>>>>>", UtilKSimpleDateFormatFormat.date2strDate(date, LocaleContract.getMalayLocale(), "YYYYMMMMd"));
+        UtilKLogWrapper.d("MainActivity>>>>>", UtilKSimpleDateFormatFormat.date2strDate(date, LocaleContract.getMalayLocale(), "YYYYMMMMd"));
+        UtilKLogWrapper.d("MainActivity>>>>>", UtilKSimpleDateFormatFormat.date2strDate(date, LocaleContract.getBurmeseLocale(), "YYYYMMMMd"));
+        UtilKLogWrapper.d("MainActivity>>>>>", UtilKSimpleDateFormatFormat.date2strDate(date, LocaleContract.getBurmeseLocale(), "YYYYMMMMd"));
+        UtilKLogWrapper.d("MainActivity>>>>>", UtilKSimpleDateFormatFormat.date2strDate(date, LocaleContract.getIndonesiaLocale(), "YYYYMMMMd"));
+        UtilKLogWrapper.d("MainActivity>>>>>", UtilKSimpleDateFormatFormat.date2strDate(date, LocaleContract.getIndonesiaLocale(), "YYYYMMMMd"));
+        UtilKLogWrapper.d("MainActivity>>>>>", UtilKSimpleDateFormatFormat.date2strDate(date, LocaleContract.getIndonesiaLocale(), "YYYYMMMMd"));
+        UtilKLogWrapper.d("MainActivity>>>>>", UtilKSimpleDateFormatFormat.date2strDate(date, LocaleContract.getIndonesiaLocale(), "YYYYMMMMd"));
+        UtilKLogWrapper.d("MainActivity>>>>>", UtilKSimpleDateFormatFormat.date2strDate(date, LocaleContract.getIndonesiaLocale(), "YYYYMMMMd"));
+        UtilKLogWrapper.d("MainActivity>>>>>", UtilKSimpleDateFormatFormat.date2strDate(date, LocaleContract.getIndonesiaLocale(), "YYYYMMMMd"));
+        UtilKLogWrapper.d("MainActivity>>>>>", UtilKSimpleDateFormatFormat.date2strDate(date, LocaleContract.getIndonesiaLocale(), "YYYYMMMMd"));
+        UtilKLogWrapper.d("MainActivity>>>>>", "cost time " + (System.currentTimeMillis() - time));
 
         mWebView = findViewById(R.id.wv_main_web);
 
@@ -54,7 +92,7 @@ public final class MainActivity extends BaseActivity
                 getApplication().getResources().getString(R.string.current_language));
         mSystemLanguageView = findViewById(R.id.tv_main_language_system);
         mSystemLanguageView.setText(MultiLanguages.getLanguageString(this,
-            MultiLanguages.getSystemLanguage(this), R.string.current_language));
+                MultiLanguages.getSystemLanguage(this), R.string.current_language));
 
         if (MultiLanguages.isSystemLanguage(this)) {
             radioGroup.check(R.id.rb_main_language_auto);
@@ -122,7 +160,7 @@ public final class MainActivity extends BaseActivity
             return;
         }
         mSystemLanguageView.setText(MultiLanguages.getLanguageString(this,
-            MultiLanguages.getSystemLanguage(this), R.string.current_language));
+                MultiLanguages.getSystemLanguage(this), R.string.current_language));
     }
 
     @Override
