@@ -1,7 +1,7 @@
 package com.mozhimen.localk.multilang
 
 import com.hjq.language.LocaleContract
-import com.mozhimen.basick.utilk.java.text.date2strDate
+import com.mozhimen.kotlin.utilk.java.text.date2strDate
 import org.junit.Test
 import java.util.Date
 

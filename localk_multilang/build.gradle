@@ -31,8 +31,8 @@ android {
 }
 
 dependencies {
-
-    implementation project(':SwiftKit:basick')
+    implementation project(':SwiftKit:mvvmk')
+    implementation project(':AStackKit:stackk')
     api project(project.path.replace(project.name, '') + ':multilang')
 
     testImplementation 'junit:junit:4.13.2'

@@ -2,7 +2,7 @@ package com.mozhimen.localk.multilang.bases
 
 import android.content.Context
 import com.hjq.language.MultiLanguages
-import com.mozhimen.basick.elemk.androidx.appcompat.bases.BaseBarActivity
+import com.mozhimen.basick.bases.BaseBarActivity
 
 /**
  * @ClassName BaseMultiLangBarActivity

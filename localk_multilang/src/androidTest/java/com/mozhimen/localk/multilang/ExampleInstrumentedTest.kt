@@ -3,8 +3,8 @@ package com.mozhimen.localk.multilang
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
 import com.hjq.language.LocaleContract
-import com.mozhimen.basick.elemk.java.util.cons.CDateFormat
-import com.mozhimen.basick.utilk.java.text.date2strDate
+import com.mozhimen.kotlin.elemk.java.util.cons.CDateFormat
+import com.mozhimen.kotlin.utilk.java.text.date2strDate
 
 import org.junit.Test
 import org.junit.runner.RunWith
