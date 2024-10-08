@@ -3,7 +3,7 @@ package com.mozhimen.localk.multilang.bases
 import android.content.Context
 import androidx.viewbinding.ViewBinding
 import com.hjq.language.MultiLanguages
-import com.mozhimen.bindk.bases.activity.viewbinding.BaseBarActivityVB
+import com.mozhimen.bindk.bases.viewbinding.activity.BaseBarActivityVB
 
 /**
  * @ClassName BaseMultiLangBarActivity
