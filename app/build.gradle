@@ -68,7 +68,7 @@ dependencies {
     implementation fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
     implementation project(':multilang')
 
-    implementation project(':SwiftKit:basick')
+    implementation project(':ASwiftKit:basick')
     // AndroidX 库：https://github.com/androidx/androidx
 //    implementation 'androidx.appcompat:appcompat:1.4.0'
     // Material 库：https://github.com/material-components/material-components-android
