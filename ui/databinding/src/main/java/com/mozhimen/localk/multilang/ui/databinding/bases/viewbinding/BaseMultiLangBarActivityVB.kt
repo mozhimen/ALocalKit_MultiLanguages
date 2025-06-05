@@ -1,9 +1,9 @@
-package com.mozhimen.localk.multilang.bases
+package com.mozhimen.localk.multilang.ui.databinding.bases.viewbinding
 
 import android.content.Context
-import androidx.databinding.ViewDataBinding
+import androidx.viewbinding.ViewBinding
 import com.hjq.language.MultiLanguages
-import com.mozhimen.uik.databinding.bases.viewdatabinding.activity.BaseBarActivityVDB
+import com.mozhimen.uik.databinding.bases.viewbinding.activity.BaseBarActivityVB
 
 /**
  * @ClassName BaseMultiLangBarActivity
@@ -12,7 +12,7 @@ import com.mozhimen.uik.databinding.bases.viewdatabinding.activity.BaseBarActivi
  * @Date 2023/12/24 15:22
  * @Version 1.0
  */
-abstract class BaseMultiLangBarActivityVDB<VDB : ViewDataBinding> : BaseBarActivityVDB<VDB>() {
+abstract class BaseMultiLangBarActivityVB<VB : ViewBinding> : BaseBarActivityVB<VB>() {
 
     override fun attachBaseContext(newBase: Context?) {
         super.attachBaseContext(MultiLanguages.attach(newBase))

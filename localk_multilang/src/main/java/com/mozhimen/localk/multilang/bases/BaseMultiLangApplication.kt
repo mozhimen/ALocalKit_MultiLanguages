@@ -17,16 +17,16 @@ import com.mozhimen.stackk.bases.BaseApplication
 @OptIn(OApiMultiDex_InApplication::class)
 open class BaseMultiLangApplication : BaseApplication() {
     override fun attachBaseContext(base: Context?) {
-        val time = System.currentTimeMillis()
+//        val time = System.currentTimeMillis()
         super.attachBaseContext(MultiLanguages.attach(base))
-        UtilKLogWrapper.d(TAG, "attachBaseContext: ${System.currentTimeMillis() - time}")
+//        UtilKLogWrapper.d(TAG, "attachBaseContext: ${System.currentTimeMillis() - time}")
     }
 
     @CallSuper
     override fun onCreate() {
         super.onCreate()
-        val time = System.currentTimeMillis()
+//        val time = System.currentTimeMillis()
         MultiLanguages.init(this)
-        UtilKLogWrapper.d(TAG, "onCreate: MultiLanguages.init time ${System.currentTimeMillis() - time}")
+//        UtilKLogWrapper.d(TAG, "onCreate: MultiLanguages.init time ${System.currentTimeMillis() - time}")
     }
 }

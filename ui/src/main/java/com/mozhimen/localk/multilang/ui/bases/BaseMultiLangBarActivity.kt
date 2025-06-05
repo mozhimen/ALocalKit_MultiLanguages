@@ -1,4 +1,4 @@
-package com.mozhimen.localk.multilang.bases
+package com.mozhimen.localk.multilang.ui.bases
 
 import android.content.Context
 import com.hjq.language.MultiLanguages
@@ -12,7 +12,6 @@ import com.mozhimen.basick.bases.BaseBarActivity
  * @Version 1.0
  */
 abstract class BaseMultiLangBarActivity : BaseBarActivity() {
-
     override fun attachBaseContext(newBase: Context?) {
         super.attachBaseContext(MultiLanguages.attach(newBase))
     }
