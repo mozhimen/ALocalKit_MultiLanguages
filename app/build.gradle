@@ -7,7 +7,7 @@ android {
     defaultConfig {
         applicationId "com.hjq.language.demo"
         minSdk 19
-        targetSdk 33
+        targetSdk 34
         versionCode 930
         versionName "9.3"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
