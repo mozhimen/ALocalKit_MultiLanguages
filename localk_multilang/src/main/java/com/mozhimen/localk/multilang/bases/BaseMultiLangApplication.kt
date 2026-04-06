@@ -3,7 +3,7 @@ package com.mozhimen.localk.multilang.bases
 import android.content.Context
 import androidx.annotation.CallSuper
 import com.hjq.language.MultiLanguages
-import com.mozhimen.kotlin.lintk.optins.OApiMultiDex_InApplication
+import com.mozhimen.kotlin.lintk.optins.api.OApiMultiDex_InApplication
 import com.mozhimen.kotlin.utilk.android.util.UtilKLogWrapper
 import com.mozhimen.stackk.bases.BaseApplication
 
