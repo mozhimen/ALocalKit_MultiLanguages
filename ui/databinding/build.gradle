@@ -36,7 +36,7 @@ dependencies {
     } else {
         implementation project(':ALocalKit_MultiLanguages:localk_multilang')
     }
-    implementation project(':ASwiftKit:uik:databinding')
+    implementation 'com.github.mozhimen.ASwiftKit:uik-databinding:2.0.4'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.2.1'
