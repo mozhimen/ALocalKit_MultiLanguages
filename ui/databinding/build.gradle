@@ -31,11 +31,7 @@ android {
 }
 
 dependencies {
-    if (rootProject.name == "ALocalKit_MultiLanguages") {
-        implementation project(':localk_multilang')
-    } else {
-        implementation project(':ALocalKit_MultiLanguages:localk_multilang')
-    }
+    implementation project(':localk_multilang')
     implementation 'com.github.mozhimen.ASwiftKit:uik-databinding:2.1.6'
 
     testImplementation 'junit:junit:4.13.2'

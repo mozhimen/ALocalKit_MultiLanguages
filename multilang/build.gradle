@@ -6,6 +6,7 @@ android {
 
     defaultConfig {
         minSdk 14
+        multiDexEnabled true
 //        versionCode 930
 //        versionName "9.3"
 

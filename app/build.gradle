@@ -6,7 +6,7 @@ android {
     namespace "com.hjq.language.demo"
     defaultConfig {
         applicationId "com.hjq.language.demo"
-        minSdk 19
+        minSdk 21
         targetSdk 34
         versionCode 930
         versionName "9.3"

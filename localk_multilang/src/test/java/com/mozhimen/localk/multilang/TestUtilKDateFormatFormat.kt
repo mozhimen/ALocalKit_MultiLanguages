@@ -39,11 +39,11 @@ class TestUtilKDateFormatFormat {
 //        println("//////////////////////////////////////")
 
         //MMMMd
-        println(date.date2strDate(LocaleContract.getVietnameseLocale(), "MMMMd", false))
-        println(date.date2strDate(LocaleContract.getHindiLocale(), "MMMMd", false))
-        println(date.date2strDate(LocaleContract.getRussiaLocale(), "MMMMd", false))
-        println(date.date2strDate(LocaleContract.getVietnameseLocale(), "MMMMd", true))
-        println(date.date2strDate(LocaleContract.getHindiLocale(), "MMMMd", true))
-        println(date.date2strDate(LocaleContract.getRussiaLocale(), "MMMMd", true))
+//        println(date.date2strDate(LocaleContract.getVietnameseLocale(), "MMMMd"))
+//        println(date.date2strDate(LocaleContract.getHindiLocale(), "MMMMd"))
+//        println(date.date2strDate(LocaleContract.getRussiaLocale(), "MMMMd"))
+//        println(date.date2strDate(LocaleContract.getVietnameseLocale(), "MMMMd"))
+//        println(date.date2strDate(LocaleContract.getHindiLocale(), "MMMMd"))
+//        println(date.date2strDate(LocaleContract.getRussiaLocale(), "MMMMd"))
     }
 }

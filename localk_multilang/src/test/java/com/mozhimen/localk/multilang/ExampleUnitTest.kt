@@ -1,6 +1,6 @@
 package com.mozhimen.localk.multilang
 
-import com.mozhimen.kotlin.utilk.kotlin.printlog
+import com.mozhimen.kotlin.utilk.kotlin.io.printlog
 import org.junit.Test
 
 /**
