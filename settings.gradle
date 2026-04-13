@@ -24,6 +24,6 @@ rootProject.name = "ALocalKit_MultiLanguages"
 include ':app'
 include ':multilang'
 include ':localk_multilang'
-include ':ui:databinding'
-include ':ui:compose'
+include ':ui-databinding'
+include ':ui-compose'
 include ':ui'

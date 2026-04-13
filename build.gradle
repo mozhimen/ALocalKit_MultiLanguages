@@ -81,7 +81,7 @@ tasks.register('clean', Delete) {
 
 subprojects {
     apply plugin: 'maven-publish'
-    def versionToPublished = '0.0.1'
+    def versionToPublished = '0.0.2'
     def groupIdToPublished = 'com.github.mozhimen.ALocalKit_MultiLanguages'
 
     afterEvaluate { project ->
